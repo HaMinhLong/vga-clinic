@@ -10,13 +10,20 @@
   </head>
   <body>
     <header class="padding flex">
-      <div class="header-logo flex">
+      <a href="./index.html" class="header-logo flex">
         <img src="./images/logo-website.svg" alt="" />
-      </div>
-      <a href="#" class="user-res">
-        <img src="./images/home/user-res.svg" alt="" />
       </a>
+      <div class="user-res">
+        <img src="./images/home/user-res.svg" alt="" />
+        <img
+          src="./images/home/nav-icon.svg"
+          alt=""
+          onclick="toggleNav()"
+          class="nav-icon"
+        />
+      </div>
       <ul class="navigation flex">
+        <div class="close-nav"></div>
         <li><a href="./index.html" class="active">Trang chủ</a></li>
         <li><a href="./Utilities.html">Tính năng</a></li>
         <li><a href="./PriceList.html">Bảng giá</a></li>
@@ -24,11 +31,11 @@
         <li><a href="./Contact.html">Liên hệ</a></li>
         <li class="flex">
           <!-- <div class="user flex">
-                <img src="./images/home/user-res.svg" alt="" />
-                <p>Nguyễn</p>
-              </div> -->
+            <img src="./images/home/user-res.svg" alt="" />
+            <p>Nguyễn</p>
+          </div> -->
           <a href="./SignIn.html" class="sign-out">
-            <img src="./images/home/sign-out.svg" alt="" />
+            <img src="./images/home/sign-in.svg" alt="" />
           </a>
           <a href="./SignIn.html">Đăng nhập</a>
           <a href="#dang-ky" class="button">Đăng ký ngay</a>
@@ -246,7 +253,7 @@
         <div class="footer-logo flex">
           <img src="./images/logo-website.svg" alt="" />
         </div>
-        <div class="sign-up-footer">
+        <div class="sign-up-footer-2">
           <p>Đăng ký để nhận được tin tức mới nhất</p>
           <form class="flex">
             <input type="text" placeholder="Email*" />
@@ -347,5 +354,6 @@
         <p>MST: 0108140789 do sở KH đầu tư Hà Nội cấp ngày 22/1/2018</p>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
